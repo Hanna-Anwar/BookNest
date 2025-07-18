@@ -1,0 +1,133 @@
+:root {
+
+    --body: linear-gradient(to bottom, #f5efff, #f2ebfd, #efe7fa, #ece3f8, #e9dff5, #e6dbf5, #e4d7f5, #e1d3f5, #ddcef7, #d8cafa, #d3c5fc, #cdc1ff);
+    --text-color: linear-gradient(to right top, #8772ed, #9074e0, #9577d4, #997ac8, #9b7ebd);
+    --btn-color: #9B7EBD;
+    --shadow-color: #a894f9;
+    --footer-color: #252328;
+
+
+}
+body{
+    background: var(--body);
+}
+
+/* navbar-bg-color=>navbar class */
+.navbar {
+    background: var(--body)
+}
+
+/* app-title-color,text-color,link-color*/
+.app-title {
+    background: var(--text-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.parent-container {
+    width: 100%;
+    height: 650px;
+    margin-top: 82px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--body);
+}
+
+
+.child-container {
+    width: 75%;
+    height: 600px;
+
+}
+
+.sign-form {
+    box-shadow: 4px 4px 4px var(--shadow-color);
+}
+
+/* transition applied for sign box */
+.sign-form {
+    transition: transform 0.4s ease-in-out;
+}
+
+.sign-form:hover {
+    transform: scale(1.03);
+}
+
+/* button color */
+.click {
+    background-color: var(--btn-color);
+}
+
+
+
+/* app-title animation => shadow-dance-text */
+.shadow-dance-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 5px 5px 0#9b7ebd, 10px 10px 0 #00d4ff;
+    animation: shadow-dance 2s infinite;
+}
+
+@keyframes shadow-dance {
+
+    0%,
+    100% {
+        text-shadow: 5px 5px 0 #5a348d, 10px 10px 0 #6b518b;
+    }
+
+    50% {
+        text-shadow: -5px -5px 0 #411e70, -10px -10px #d2b3f5;
+    }
+}
+
+/* navbar-items animation */
+.nav-bar-item {
+    transition: transform 0.2s ease-in;
+}
+
+.nav-bar-item>a:hover {
+    transform: translate(5px, 5px);
+}
+
+
+/* home=>welcome quotes */
+.welcome-quote {
+    width: 100%;
+    height: 250px;
+    margin-top: 83px;
+   
+}
+/* welcome img */
+
+.welcome-img{
+ box-shadow: 4px 4px 4px var(--shadow-color) ;
+}
+
+.welcome-img{
+    transition: transform 0.3s ease-in;
+}
+.welcome-img:hover{
+    transform:scale(1.01);
+}
+
+
+/* footer */
+.footer {
+    background-color: var(--footer-color);
+    margin-top: 215px;
+   
+}
+
+.why-booknest{
+    margin-top: 150px;
+    box-shadow: 4px 4px 4px var(--shadow-color);
+    text-align: center;
+
+}
+.why-booknest{
+    transition: transform 0.5s ease-in-out;
+}
+
+.why-booknest:hover{
+    transform: scale(1.03);
+}
