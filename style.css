@@ -83,28 +83,41 @@ body{
 /* navbar-items animation */
 .nav-bar-item {
     transition: transform 0.2s ease-in;
+    
+    
 }
 
 .nav-bar-item>a:hover {
-    transform: translate(5px, 5px);
+    transform: translate(4px, 4px);
+    background: var(--text-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
+.card{
+    border: none;
+}
 
-/* home=>welcome quotes */
-.welcome-quote {
-    width: 100%;
+.about-section{
+    width: 75%;
     height: 250px;
-    margin-top: 83px;
-   
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    box-shadow: 5px 5px 5px var(--shadow-color);
 }
+
+
 /* welcome img */
 
 .welcome-img{
- box-shadow: 4px 4px 4px var(--shadow-color) ;
+ box-shadow: 6px 6px 6px var(--shadow-color) ;
 }
 
 .welcome-img{
-    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in-out;
 }
 .welcome-img:hover{
     transform:scale(1.01);
@@ -119,8 +132,8 @@ body{
 }
 
 .why-booknest{
-    margin-top: 150px;
-    box-shadow: 4px 4px 4px var(--shadow-color);
+    margin-top: 90px;
+    box-shadow: 5px 5px 5px var(--shadow-color);
     text-align: center;
 
 }
