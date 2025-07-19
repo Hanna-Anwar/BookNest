@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookshelf</title>
+    <!-- custom link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- js-bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand app-title shadow-dance-text" href="#">
+                <h1>BookNest</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-bold " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item nav-bar-item app-title">
+                        <a class="nav-link fw-bolder " aria-current="page" href="./home.html">Home</a>
+                    </li>
+
+                    <li class="nav-item nav-bar-item app-title">
+                        <a class="nav-link fw-bolder" href="#">Profile</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-bar end -->
+
+    <!-- search bar start -->
+    <div class="search-box d-flex justify-content-center ">
+        <div class="search">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 shadow-lg " type="search" placeholder="Search for a title, author.."
+                    aria-label="Search" />
+                <button class="navbar rounded-pill p-2 button " type="submit"><span
+                        class="app-title fw-bolder ">Search</span></button>
+            </form>
+        </div>
+    </div>
+    <!-- search bar end -->
+    <!-- drop down start -->
+    <div class="btn-group">
+        <button type="button" class="btn app-title   fw-bolder dropdown dropdown-toggle" data-bs-toggle="dropdown"
+            data-bs-display="static" aria-expanded="false">
+            Browse by Genre:
+        </button>
+        <ul class="dropdown-menu dropdown-menu-lg-end">
+            <li><a class="dropdown-item app-title" href="#id_fiction">Fiction</a></li>
+            <li><button class="dropdown-item app-title " type="button">Non-Fiction</button></li>
+            <li><a class="dropdown-item app-title" href="#id_fantacy">Fantasy</a></li>
+            <li><button class="dropdown-item app-title " type="button">Romance</button></li>
+            <li><button class="dropdown-item app-title " type="button">Horror</button></li>
+            <li><button class="dropdown-item app-title " type="button">Children's Book</button></li>
+            <li><button class="dropdown-item app-title " type="button"> Adventure</button></li>
+            <li><button class="dropdown-item app-title " type="button">Thriller</button></li>
+        </ul>
+    </div>
+
+    <!-- drop down end -->
+
+
+
+    <!-- fiction card start -->
+
+    <h3 class="text-center app-title mt-5 fw-bolder fs-2 " id="id_fiction">FICTION SECTION</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4  mt-5 ms-3">
+        <!-- col1 -->
+
+        <div class="col">
+            <div class="card h-100 w-75">
+                <img src="./images/nightcircus.png" class="card-img-top img " alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder ">The Night Circus</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong>Erin Morgenstern <br>
+                        <strong>Description:</strong>It tells the story of a mysterious circus that opens only at night,
+                        filled with wonders and illusions. Two young magicians are unknowingly bound in a magical
+                        competition against each other.
+                    </p>
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i></span>
+                    <span class="app-title">(1.2k)</span><br>
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(1k) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(150)</span> <br>
+                </div>
+            </div>
+        </div>
+        <!-- col2 -->
+
+        <div class="col">
+            <div class="card h-100 w-75">
+                <img src="./images/booktheif.png" class="card-img-top img" alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder ">The Book Thief</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong>Markus Zusak <br>
+                        <strong>Description:</strong>A young girl finds solace in stealing books and sharing them with
+                        others during the horrors of World War II. Through her love of words, she builds a world of hope
+                        amidst tragedy.
+                    </p>
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star-half-stroke text-warning"></i></span>
+                    <span class="app-title">(1k)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(4k) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(200)</span> <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- col3 -->
+
+        <div class="col ">
+            <div class="card h-100 w-75">
+                <img src="./images/midnightlib.png" class="card-img-top img" alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder ">The Midnight Library</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong> Matt Haig <br>
+                        <strong>Description:</strong>The Midnight Library follows Nora Seed, who finds herself in a
+                        magical library between life and death. Each book offers a glimpse into a different life she
+                        could have lived had she made different choices.
+                    </p>
+
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star-half-stroke text-warning"></i></span>
+                    <span class="app-title">(120k)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(4.2k) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(671)</span> <br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- col4 -->
+
+        <div class="col mt-5">
+            <div class="card h-100 w-75">
+                <img src="./images/7husbandofevelynhugo.png" class="card-img-top img" alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder ">The Seven Husbands of Evelyn Hugo</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong> Taylor Jenkins Reid <br>
+                        <strong>Description:</strong> A reclusive Hollywood icon finally agrees to tell the story of her
+                        glamorous but turbulent life. As she recounts
+                        her seven marriages, she reveals a hidden love and the cost of fame.
+
+                    </p>
+
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i></span>
+                    <span class="app-title">(3.2k)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(567) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(159)</span> <br>
+                </div>
+            </div>
+        </div>
+        <!-- col-5 -->
+
+
+
+
+        <div class="col mt-5">
+            <div class="card h-100 w-75">
+                <img src="./images/silentpatient.png" class="card-img-top img " alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder "> The Silent Patient</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong> Alex Michaelides<br>
+                        <strong>Description:</strong>A famous painter is accused of murdering her husband—and then never
+                        speaks another word. A psychotherapist
+                        becomes obsessed with uncovering the truth behind her silence. As he digs deeper, shocking
+                        secrets begin to
+                        unravel.
+                    </p>
+
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i></span>
+                    <span class="app-title">(2.5M)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(1.3k) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(894)</span> <br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- col6 -->
+        <div class="col mt-5">
+            <div class="card h-100 w-75">
+                <img src="./images/killmocking.png" class="card-img-top img" alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder ">To Kill a Mockingbird </h5>
+                    <p class="card-text app-title"><strong>Autor:</strong> Harper Lee<br>
+                        <strong>Description:</strong>It is a powerful story set in the racially charged American South
+                        during the 1930s. It follows young Scout Finch as her father, Atticus, defends a Black man
+                        wrongly accused of a crime. It shows fairness and kindness through her eyes.
+                    </p>
+
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                    </span>
+                    <span class="app-title">(15k)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(687) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(609)</span> <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fiction card end -->
+
+    <!-- fantasy crad start  -->
+    <h3 class="text-center app-title mt-5 fw-bolder fs-2 " id="id_fantacy">FANTASY SECTION</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4  mt-5 ms-3">
+        <!-- col1 -->
+
+        <div class="col">
+            <div class="card h-100 w-75">
+                <img src="./images/harrypotter.png" class="card-img-top img " alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder ">Harry Potter Series</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong>J.K. Rowling <br>
+                        <strong>Description:</strong>A young boy discovers he’s a wizard and enters a hidden world of
+                        magic at Hogwarts School. As he grows,he faces dark forces,friendships,and powerful secrets
+                        about his past. The series mixes magic &
+                        adventures.
+                    </p>
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i></span>
+                    <span class="app-title">(6M)</span><br>
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(4k) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(6,289)</span> <br>
+                </div>
+            </div>
+        </div>
+        <!-- col2 -->
+
+        <div class="col">
+            <div class="card h-100 w-75">
+                <img src="./images/hobbit.png" class="card-img-top img" alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder ">The Hobbit </h5>
+                    <p class="card-text app-title"><strong>Autor:</strong>J.R.R. Tolkien <br>
+                        <strong>Description:</strong>Bilbo Baggins, a quiet hobbit, is swept into a quest to reclaim a
+                        mountain of treasure from a fearsome dragon.
+                        Along the journey, he faces trolls, goblins, and discovers a mysterious ring.
+                        It’s a classic tale of bravery, growth, and unexpected adventure.
+                    </p>
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star-half-stroke text-warning"></i></span>
+                    <span class="app-title">(1.5k)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(3,568) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(630)</span> <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- col3 -->
+
+        <div class="col ">
+            <div class="card h-100 w-75">
+                <img src="./images/percyjackson.png" class="card-img-top img" alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder "> Percy Jackson & the Olympians</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong> Rick Riordan <br>
+                        <strong>Description:</strong>Percy discovers he’s the son of a Greek god and is thrown into a
+                        world of monsters and myths.
+                        He trains at Camp Half-Blood and goes on quests to stop ancient threats.
+                        The series blends humor, action, and mythology for young readers.
+
+                    </p>
+
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star-half-stroke text-warning"></i></span>
+                    <span class="app-title">(120k)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(4.2k) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(671)</span> <br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- col4 -->
+
+        <div class="col mt-5">
+            <div class="card h-100 w-75">
+                <img src="./images/courtofthrones.png" class="card-img-top img" alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder "> A Court of Thorns and Roses</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong> Sarah J. Maas <br>
+                        <strong>Description:</strong>A mortal girl is taken to a magical land as punishment for killing
+                        a faerie.
+                        She becomes entangled in love and war between powerful fae courts.
+                        The story mixes romance, fantasy, and dark twists.
+                    </p>
+
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    </span>
+                    <span class="app-title">(3.2k)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(567) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(159)</span> <br>
+                </div>
+            </div>
+        </div>
+        <!-- col-5 -->
+
+
+
+
+        <div class="col mt-5">
+            <div class="card h-100 w-75">
+                <img src="./images/starlesssea.png" class="card-img-top img " alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder ">The Starless Sea </h5>
+                    <p class="card-text app-title"><strong>Autor:</strong> Erin Morgenstern<br>
+                        <strong>Description:</strong>A graduate student discovers a mysterious book that leads him into
+                        a hidden underground world of stories.
+                        He embarks on a journey filled with secret doors, ancient libraries, and timeless love.
+
+                    </p>
+
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                    </span>
+                    <span class="app-title">(1,457)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(2k) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(1,690)</span> <br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- col6 -->
+        <div class="col mt-5">
+            <div class="card h-100 w-75">
+                <img src="./images/narnia.png" class="card-img-top img" alt="...">
+                <div class="card-body description">
+                    <h5 class="card-title app-title fw-bolder "> The Chronicles of Narnia</h5>
+                    <p class="card-text app-title"><strong>Autor:</strong> – C.S. Lewis<br>
+                        <strong>Description:</strong>Four siblings enter a magical world through a wardrobe and find
+                        themselves in a land ruled by talking animals and ancient magic.
+                        They help lead the battle against an evil witch to restore peace.
+                        Each book offers timeless lessons and imaginative adventures
+
+                    </p>
+
+                    <span class="rating"> <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                    </span>
+                    <span class="app-title">(8k)</span><br>
+
+
+
+                    <span><i class="fa-solid fa-heart text-danger"></i></span>
+                    <span class="app-title">(907) </span>
+                    <i class="fa-regular fa-comment app-title"></i>
+                    <span class="app-title">(352)</span> <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fantasy crad end  -->
+
+
+
+</body>
+
+</html>

@@ -8,13 +8,18 @@
 
 
 }
-body{
+
+body {
     background: var(--body);
 }
 
 /* navbar-bg-color=>navbar class */
 .navbar {
     background: var(--body)
+}
+
+.button {
+    border: none;
 }
 
 /* app-title-color,text-color,link-color*/
@@ -83,8 +88,8 @@ body{
 /* navbar-items animation */
 .nav-bar-item {
     transition: transform 0.2s ease-in;
-    
-    
+
+
 }
 
 .nav-bar-item>a:hover {
@@ -95,11 +100,11 @@ body{
 
 }
 
-.card{
+.card {
     border: none;
 }
 
-.about-section{
+.about-section {
     width: 75%;
     height: 250px;
     border-radius: 20px;
@@ -112,15 +117,16 @@ body{
 
 /* welcome img */
 
-.welcome-img{
- box-shadow: 6px 6px 6px var(--shadow-color) ;
+.welcome-img {
+    box-shadow: 6px 6px 6px var(--shadow-color);
 }
 
-.welcome-img{
+.welcome-img {
     transition: transform 0.3s ease-in-out;
 }
-.welcome-img:hover{
-    transform:scale(1.01);
+
+.welcome-img:hover {
+    transform: scale(1.01);
 }
 
 
@@ -128,19 +134,55 @@ body{
 .footer {
     background-color: var(--footer-color);
     margin-top: 215px;
-   
+
 }
 
-.why-booknest{
+.why-booknest {
     margin-top: 90px;
     box-shadow: 5px 5px 5px var(--shadow-color);
     text-align: center;
 
 }
-.why-booknest{
+
+.why-booknest {
     transition: transform 0.5s ease-in-out;
 }
 
-.why-booknest:hover{
+.why-booknest:hover {
     transform: scale(1.03);
 }
+
+/* search bar */
+.search {
+    width: 50%;
+    height: 45px;
+    /* border: 2px solid skyblue; */
+    margin-top: 100px;
+    /* box-shadow: 3px 3px 3px var(--shadow-color);*/
+}
+
+/* dropdown */
+.dropdown {
+    width: 70%;
+    height: 45px;
+    border: none;
+}
+
+/* .rating{
+    text-align: center;
+} */
+
+/* description */
+.description {
+    height: 300px;
+    background: var(--body);
+    box-shadow: 4px 4px 4px var(--shadow-color);
+}
+
+/* img for image width */
+.img {
+    width: 50%;
+    height: 357px;
+}
+
+ 
