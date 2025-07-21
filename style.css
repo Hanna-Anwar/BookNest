@@ -184,3 +184,105 @@ body {
     width: 50%;
     height: 357px;
 }
+
+.parent-container {
+
+    height: 800px;
+    /* border: 2px solid red; */
+    margin-top: 88px;
+}
+
+.col-1 {
+
+    height: 570px;
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 5px var(--shadow-color);
+    margin-top: 40px;
+}
+.col-2 {
+
+    height: 690px;
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 5px var(--shadow-color);
+    margin-top: 40px;
+}
+
+.col-3 {
+
+    height: 570px;
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 5px var(--shadow-color);
+    margin-top: 40px;
+}
+
+/* profile animation */
+.col-1{
+    transition: transform 0.3s ease-in-out;
+}
+.col-1:hover{
+    transform: scale(1.03);
+}
+
+.col-2{
+    transition: transform 0.3s ease-in-out;
+}
+.col-2:hover{
+    transform: scale(1.03);
+}
+.col-3{
+    transition: transform 0.3s ease-in-out;
+}
+.col-3:hover{
+    transform: scale(1.03);
+}
+/* sub boxes inside col-1 */
+.box {
+    height: 154px;
+}
+
+/* profile pic */
+.img {
+    width: 50%;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+/* username left & edit-profile button */
+.text {
+    margin-left: 90px;
+}
+
+.my-bookshelf {
+    width: 100%;
+    height: 150px;
+}
+
+.books {
+    width: 30%;
+    height: 130px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+/* box for both book-title and progressbar */
+.bar-box {
+    width: 60%;
+    height: 80px;
+    /* border: 2px solid gray; */
+    margin-top: 35px;
+}
+
+/* progress bar=>bar class */
+.bar {
+    margin-top: 17px;
+    margin-left: 17px;
+}
+
+.com-img{
+    margin-top: 14px;
+    width: 25%;
+    height: 33px;
+    border-radius: 50%;
+}
