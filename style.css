@@ -174,7 +174,7 @@ body {
 
 /* description */
 .description {
-    height: 300px;
+    height: 320px;
     background: var(--body);
     box-shadow: 4px 4px 4px var(--shadow-color);
 }
@@ -191,7 +191,7 @@ body {
     /* border: 2px solid red; */
     margin-top: 88px;
 }
- 
+ /* profile-box */
 .box-1 {
     box-shadow: 5px 5px 5px var(--shadow-color);
     margin-top: 40px;
